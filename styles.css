@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 30px;
+  background: linear-gradient(rgb(237, 237, 237), rgb(12, 216, 209), rgb(44, 2, 234));
+}
+header .headCont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px black solid;
+  padding: 0 10px;
+  width: 100px;
+  height: 50px;
+  gap: 14px;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.clock .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#container button {
+  position: absolute;
+  border: none;
+  background: none;
+  animation: rotate 2s linear infinite;
+}
+#container {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+
+@keyframes rotate {
+  0%, 100%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+}
